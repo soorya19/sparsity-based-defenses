@@ -10,7 +10,7 @@ Code for the following papers:
 
 ## Prerequisites
 
-Python 3.x, [PyWavelets](https://pywavelets.readthedocs.io/), [Scikit-Learn](http://scikit-learn.org), [TensorFlow](https://www.tensorflow.org).
+Python 3.x, [PyWavelets](https://pywavelets.readthedocs.io/), [Scikit-learn](http://scikit-learn.org), [TensorFlow](https://www.tensorflow.org), [CleverHans](https://github.com/tensorflow/cleverhans).
 
 ## Open source license
 
