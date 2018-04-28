@@ -1,0 +1,2 @@
+model_checkpoint_path: "sparse_10.ckpt"
+all_model_checkpoint_paths: "sparse_10.ckpt"
