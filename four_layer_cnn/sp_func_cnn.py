@@ -39,7 +39,7 @@ def sp_frontend(images, rho=0.03, wavelet='bior4.4', mode='periodization', max_l
 		images_sp[i, :, :, 0] = image_r
 	return images_sp
 
-def sp_project(image, weights, wavelet='bior4.4', mode='periodization', max_lev=1, rho=0.02):
+def sp_project(image, weights, wavelet='bior4.4', mode='periodization', max_lev=1, rho=0.03):
 	"""
 	Projects weights onto top rho% of the support of image (in the wavelet basis).
 
