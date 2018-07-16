@@ -10,12 +10,14 @@ import numpy as np
 import pywt
 from sklearn import datasets, utils, model_selection, metrics, svm
 from sp_func_svm import sp_project, sp_frontend
+from mnist_workaround import fetch_mnist
 
 epsilon = 0.25 # L-infinity attack budget. Images are assumed to be in the range [-1, 1].
 rho = 0.02 # Sparsity level used in the defense, in the range [0, 1].
 digit_1 = 3
 digit_2 = 7
 
+fetch_mnist()
 mnist = datasets.fetch_mldata("MNIST original")
 digit_1_data = 2.0*mnist.data[mnist.target==digit_1]/255.0 - 1.0
 digit_2_data = 2.0*mnist.data[mnist.target==digit_2]/255.0 - 1.0

@@ -15,9 +15,7 @@ def sp_frontend(images, rho=0.02, wavelet='bior4.4', mode='periodization', max_l
     :param wavelet: Wavelet to use in the transform. See https://pywavelets.readthedocs.io/ for more details.
     :param mode: Signal extension mode. See https://pywavelets.readthedocs.io/ for more details.
     :param max_lev: Maximum allowed level of decomposition.
-    """
-	# Input is assumed to be in the range [-1, 1] and of shape [num_samples, 784] 
-	# Projects input onto 
+    """ 
 	num_samples = images.shape[0]
 	num_features = images.shape[1]
 	num_features_per_dim = np.int(np.sqrt(num_features))
