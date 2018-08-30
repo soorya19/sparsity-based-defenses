@@ -39,9 +39,10 @@ pred = clf.predict(data_test)
 score_bl_no_adv = 100*metrics.accuracy_score(labels_test, pred)
 print("Baseline accuracy: {:.2f}%" .format(score_bl_no_adv))
 
+digit_smaller = min(digit_1, digit_2)
 data_test_adv = np.zeros(data_test.shape)
 for i in range(labels_test.shape[0]):
-	if labels_test[i]==digit_1:
+	if labels_test[i]==digit_smaller:
 		data_test_adv[i] = data_test[i] + epsilon*np.sign(clf.coef_)
 	else:
 		data_test_adv[i] = data_test[i] - epsilon*np.sign(clf.coef_)
@@ -64,7 +65,7 @@ print("Baseline: {:.2f}%" .format(acc_bl))
 # Semi-white box attack
 data_test_adv_sw = np.zeros(data_test.shape)
 for i in range(labels_test.shape[0]):
-	if labels_test[i]==digit_1:
+	if labels_test[i]==digit_smaller:
 		data_test_adv_sw[i] = data_test[i] +  epsilon*np.sign(clf_sp.coef_)
 	else:
 		data_test_adv_sw[i] = data_test[i] - epsilon*np.sign(clf_sp.coef_)
@@ -78,7 +79,7 @@ print("Semi-white box attack: {:.2f}%" .format(acc_sw))
 data_test_adv_w = np.zeros(data_test.shape)
 for i in range(labels_test.shape[0]):
 	weights_proj = sp_project(data_test[i], clf_sp.coef_, rho=rho)
-	if labels_test[i]==digit_1:
+	if labels_test[i]==digit_smaller:
 		data_test_adv_w[i] = data_test[i] + epsilon*np.sign(weights_proj)
 	else:
 		data_test_adv_w[i] = data_test[i] - epsilon*np.sign(weights_proj)
