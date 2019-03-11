@@ -10,10 +10,8 @@ Code for the following papers:
 
 ## Prerequisites
 
-Python 3.x, [PyWavelets](https://pywavelets.readthedocs.io/), [Scikit-learn](http://scikit-learn.org), [TensorFlow](https://www.tensorflow.org), [CleverHans](https://github.com/tensorflow/cleverhans).
+Python 3.6, [CleverHans v2.1.0](https://pypi.org/project/cleverhans/2.1.0/), [TensorFlow](https://www.tensorflow.org), [Scikit-learn](http://scikit-learn.org), [tqdm](https://github.com/tqdm/tqdm).
 
 ## Open source license
 
 This project is open-sourced under the permissive BSD 3-Clause license, contained in the LICENSE file in the root directory.
-
-Copyright (c) 2018, Soorya Gopalakrishnan. 
