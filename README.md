@@ -2,9 +2,11 @@
 
 Code for the following papers:
 
-* S. Gopalakrishnan*, Z. Marzi*, U. Madhow, R. Pedarsani, "Combating Adversarial Attacks Using Sparse Representations", in *ICLR Workshop*, April 2018. [ArXiv:1803.03880](https://arxiv.org/abs/1803.03880).
+* S. Gopalakrishnan, Z. Marzi, U. Madhow, R. Pedarsani, "[Robust Adversarial Learning via Sparsifying Front Ends](https://arxiv.org/pdf/1810.10625.pdf)", arXiv:1810.10625.
 
-* Z. Marzi*, S. Gopalakrishnan*, U. Madhow, R. Pedarsani, "Sparsity-based Defense against Adversarial Attacks on Linear Classifiers", in *IEEE International Symposium on Information Theory (ISIT)*, June 2018. [ArXiv:1801.04695](https://arxiv.org/abs/1801.04695).
+* Z. Marzi*, S. Gopalakrishnan*, U. Madhow, R. Pedarsani, "[Sparsity-based Defense against Adversarial Attacks on Linear Classifiers](https://arxiv.org/abs/1801.04695.pdf)", in *IEEE International Symposium on Information Theory (ISIT)*, June 2018.
+
+* S. Gopalakrishnan*, Z. Marzi*, U. Madhow, R. Pedarsani, "[Combating Adversarial Attacks Using Sparse Representations](https://arxiv.org/abs/1803.03880.pdf)", in *ICLR Workshop*, April 2018.
 
 *Joint first authors.
 
